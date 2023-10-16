@@ -37,7 +37,7 @@ def torre_de_hanoi(n, origem, destino, intermediaria):
     A = list(range(n, 0, -1))
     B = []
     C = []
-    capacidade_pilha = 2**n - 1  # Defina a capacidade da pilha para 2^n - 1
+    capacidade_pilha = 2**n - 1
     pilha = Pilha(capacidade_pilha)
     pilha.push((n, origem, destino, intermediaria))
     movimentos = 0
@@ -81,5 +81,5 @@ def torre_de_hanoi(n, origem, destino, intermediaria):
     print(f'O número de movimentos necessários para completar o jogo foi: {movimentos}')
 
 # Exemplo de uso:
-n = 4  # Número de discos
+n = 3  # Número de discos
 torre_de_hanoi(n, 'A', 'C', 'B')
